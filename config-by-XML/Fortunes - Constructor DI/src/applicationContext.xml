@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Dependencies to inject -->
+    <bean id="happyFortune" class="np.com.roshanadhikary.ioc.HappyFortune" />
+    <bean id="sadFortune" class="np.com.roshanadhikary.ioc.SadFortune" />
+
+
+    <!-- Beans to inject the dependencies into -->
+    <bean id="footballCoach" class="np.com.roshanadhikary.ioc.FootballCoach">
+        <constructor-arg ref="happyFortune" />
+    </bean>
+
+    <bean id="cricketCoach" class="np.com.roshanadhikary.ioc.CricketCoach">
+        <constructor-arg ref="sadFortune" />
+    </bean>
+
+</beans>
