@@ -1,6 +1,6 @@
 # Spring Configuration using Annotations
 
-Spring Configuration using Annotation relies on `@Component` annotated classes and a component-scan path.<br>
+Spring Configuration using Annotation relies on classes annotated with `@Component` and a component-scan path.<br>
 We still need to create an XML configuration file, but we can skip the bean definitions.
 
 ## XML Schema
