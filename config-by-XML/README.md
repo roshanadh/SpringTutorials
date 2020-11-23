@@ -34,6 +34,7 @@ For example,
 ### Constructors
 For constructor-based injection, we can use the `<constructor-arg>` tag inside the bean definition, such as:
 ```xml
+<bean id="happyFortune" class="np.com.roshanadhikary.ioc.HappyFortune" />
 <bean
   id="footballCoach"
   class="np.com.roshanadhikary.ioc.FootballCoach">
@@ -51,6 +52,7 @@ public FootballCoach(FortuneService fortuneService) {
 ### Setters
 For setter-based injection, we can use the `<property>` tag inside the bean definition, such as:
 ```xml
+<bean id="happyFortune" class="np.com.roshanadhikary.ioc.HappyFortune" />
 <bean
   id="footballCoach"
   class="np.com.roshanadhikary.ioc.FootballCoach">
