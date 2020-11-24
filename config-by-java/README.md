@@ -11,7 +11,7 @@ package np.com.roshanadhikary.ioc;
 public class JavaConfig {
 }
 ```
-With the `@Component` annotation and its argument, we specify the base package inside which Spring's runtime will scan for classes annotated with `@Component`.<br>
+With the `@ComponentScan` annotation and its argument, we specify the base package inside which Spring's runtime will scan for classes annotated with `@Component`.<br>
 These components are then used as bean definitions by the Spring container.
 
 ### Bean Definitions
