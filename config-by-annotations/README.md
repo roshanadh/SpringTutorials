@@ -84,7 +84,7 @@ If we have two beans - happyFortune and sadFortune - we can use `@Qualifier` as 
 ```java
 @Autowired
 @Qualifier("happyFortune")
-public setFortuneService(FortuneService fortuneService) {
+public void setFortuneService(FortuneService fortuneService) {
 	this.fortuneService = fortuneService;
 }
 ```
