@@ -109,7 +109,7 @@ If we have two beans - happyFortune and sadFortune - we can use `@Qualifier` as 
 ```java
 @Autowired
 @Qualifier("happyFortune")
-public setFortuneService(FortuneService fortuneService) {
+public void setFortuneService(FortuneService fortuneService) {
 	this.fortuneService = fortuneService;
 }
 ```
@@ -117,7 +117,7 @@ public setFortuneService(FortuneService fortuneService) {
 In case we only have a single bean of type `FortuneService`, there's no need for `@Qualifier`.
 ```java
 @Autowired
-public setFortuneService(FortuneService fortuneService) {
+public void setFortuneService(FortuneService fortuneService) {
 	this.fortuneService = fortuneService;
 }
 ```
