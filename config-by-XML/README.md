@@ -30,7 +30,7 @@ For example,
   class="np.com.roshanadhikary.ioc.FootballCoach" />
 ```
 
-## Depenendency Injection
+## Dependency Injection
 ### Constructors
 For constructor-based injection, we can use the `<constructor-arg>` tag inside the bean definition, such as:
 ```xml
