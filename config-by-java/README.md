@@ -81,7 +81,7 @@ public class JavaConfig {
 With `@Bean` annotation, we define a bean where the method name (e.g., footballCoach) is used as the bean identifier.<br>
 With this method of bean definition, we do not need to annotate classes with `@Component`.
 
-## Depenendency Injection
+## Dependency Injection
 For dependency injection in a class, we can use the `@Autowired` annotation.<br>
 If there are multiple candidate beans that can be injected, we need a `@Qualifier` annotation following `@Autowired` to instruct the Spring container on what bean to inject.
 
